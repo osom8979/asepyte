@@ -165,4 +165,4 @@ class Header:
     def decode(cls, data: bytes):
         if len(data) != HEADER_SIZE:
             raise ValueError(f"Invalid header bytes: {len(data)}")
-        return cls(*unpack(HEADER_FORMAT, data[:HEADER_SIZE]))
+        return cls(*unpack(HEADER_FORMAT, data))
