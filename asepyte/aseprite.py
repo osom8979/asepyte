@@ -38,4 +38,8 @@ class Aseprite:
             if len(remain_chunk_data) != 0:
                 raise ValueError("Not all chunk data has been consumed")
             frames.append(Frame(frame_header, frame_chunks))
+
+        if len(buffer.read()) != 0:
+            raise ValueError("Remaining data exists")
+
         return cls(header, frames)
