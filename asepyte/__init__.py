@@ -5,7 +5,7 @@ from typing import Protocol
 
 from asepyte.aseprite import Aseprite
 
-__version__ = "0.0.4"
+__version__ = "0.0.5"
 
 
 class _BinaryReadableFile(Protocol):
