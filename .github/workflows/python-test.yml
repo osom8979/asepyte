@@ -3,7 +3,7 @@ name: Test
 on:
   push:
     branches:
-      - master
+      - main
 
 env:
   USE_SYSTEM_PYTHON: 3
